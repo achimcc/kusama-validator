@@ -1,3 +1,12 @@
+# IP Table Setup
+Configures the firewall of the validator. See e.g. here for an intro:https://www.linode.com/docs/guides/what-is-iptables/
+##
+First run:
+
+`sudo apt install iptables`
+
+## Used commands:
+
 #### sudo iptables -A INPUT --jump ACCEPT --protocol all --source 127.0.0.1
 accept all incoming connections from 127.0.0.1 (localhost)
 #### sudo iptables -A INPUT --jump ACCEPT --protocol tcp --dport 2001
