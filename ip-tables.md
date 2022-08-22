@@ -1,5 +1,5 @@
 # IP Table Setup
-Configures the firewall of the validator. See e.g. here for an intro:https://www.linode.com/docs/guides/what-is-iptables/
+Configures the firewall of the validator. See e.g. here for an intro: https://www.linode.com/docs/guides/what-is-iptables/
 ##
 First run:
 
