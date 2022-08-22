@@ -5,6 +5,7 @@ accept incoming tcp connections on port 2001 (needed to ssh into the server)
 #### sudo iptables -A INPUT --jump ACCEPT --protocol icmp
 accept incoming [icmp](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) connections (e.g. to ping the validator)
 #### sudo iptables -A INPUT -i lo -j ACCEPT
+allows all traffic originating from localhost (not clear how this differs from the first rule?)
 #### sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 #### sudo iptables -P INPUT DROP
 #### sudo iptables -P FORWARD DROP
